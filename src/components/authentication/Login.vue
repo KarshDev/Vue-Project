@@ -1,21 +1,44 @@
 <template>
-  <div class="container" id="app">
-    <navbar></navbar>
-    <router-view> </router-view>
-    <canvass> </canvass>
-  </div>
+<div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <input 
+                            v-model="email" 
+                            class="form-control" 
+                            type="email"
+                            placeholder="Email">
+                    </div>
+
+                    <div  class="form-group">
+                        <input 
+                            v-model="password"
+                            class="form-control"
+                            type="password"
+                            placeholder="Password">
+                    </div>
+                    
+                    <router-link to="profile" class="btn btn-primary">Login</router-link>
+
+                </div>                
+            </div>
+        </div>
+    </div>
+
 </template>
 
 <script>
-  import Navbar from './components/navbar.vue';
-  import Canvas from './components/canvas.vue';
-
-  export default {
-    components: {
-      'navbar': Navbar,
-      'canvass': Canvas
+    
+    export default {
+            data() {
+                return {
+                    email: '',
+                    password: ''
+                }
+        }
     }
-  }
 </script>
 
 <style>
