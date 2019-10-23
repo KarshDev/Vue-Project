@@ -1,12 +1,12 @@
 <template>
   <div class="row">
+    <div class="col-md-3"></div>
     <div class="col-md-6">
       <b-alert show>CANVAS TUTORIAL</b-alert>
       <div id="canvas" v-on:mousemove="updateXY"> {{ x }}, {{ y }} </div>
+      <p>Showing coordinate points of your mouse over the box</p>
     </div>
-    <div class="col-md-6">
-
-    </div>
+    <div class="col-md-3"></div>
   </div>
 </template>
 
@@ -28,7 +28,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 /*  Canvas Styling */
 
 #canvas{
@@ -37,5 +37,11 @@
   padding: 200px 20px;
   text-align: center;
   border: 1px solid #333;
+}
+
+p{
+  color: darkgoldenrod;
+  text-emphasis: bold;
+  align-self: center;
 }
 </style>

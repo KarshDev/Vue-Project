@@ -1,16 +1,8 @@
 <template>
-    <div class="container">
-
   <div class="container">
-  <h2> YOU HAVE BEEN SUC
-    ESSFULLY REDIRECTED TO YOUR PROFILE PAGE<br></h2>
-
-  <button class="btn btn-success"> CONGRATULATIONS </button>
-
+    <h2> YOU HAVE BEEN SUCCESSFULLY REDIRECTED TO YOUR PROFILE PAGE<br></h2>
+    <button class="btn btn-success"> CONGRATULATIONS </button>
   </div>
-
-</div>
-
 </template>
 
 <script>

@@ -1,13 +1,37 @@
 <template>
-<div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><router-link to="/">Home</router-link></li>
-            <li role="presentation"><router-link to="login">Login</router-link></li>
-            <li role="presentation"><router-link to="register">Register</router-link></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Vue Lessons</h3>
+<div>
+  <b-navbar type="dark" variant="dark" class="color-me">
+    <b-navbar-brand>VUE LESSONS </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav class="color-me mr-sm-2">
+        <b-nav-item><router-link to="/"> HOME </router-link></b-nav-item>
+        <b-nav-item><router-link to="punchBag">PUNCHBAG </router-link></b-nav-item>
+        <b-nav-item><router-link to="canvas">CANVAS </router-link></b-nav-item>
+      </b-navbar-nav>
+
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <b-nav-form>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+          <b-button size="sm" class="my-2 my-sm-2" type="submit">Search</b-button>
+        </b-nav-form>
+
+        <b-nav-item-dropdown class="color-me" right>
+          <!-- Using 'button-content' slot -->
+          <template v-slot:button-content>
+            <em> User </em>
+          </template>
+          <b-dropdown-item><router-link to="login">LOGIN </router-link></b-dropdown-item>
+          <b-dropdown-item><router-link to="register">REGISTER </router-link></b-dropdown-item>
+          <b-dropdown-item disabled><router-link to="profile">PROFILE </router-link></b-dropdown-item>
+        </b-nav-item-dropdown>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+  <br />
 </div>
 
 </template>
@@ -16,6 +40,6 @@
 
 </script>
 
-<style>
+<style scoped>
 
 </style>
