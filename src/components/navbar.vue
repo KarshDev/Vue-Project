@@ -7,9 +7,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="color-me mr-sm-2">
-        <b-nav-item><router-link to="/"> HOME </router-link></b-nav-item>
-        <b-nav-item><router-link to="punchBag">PUNCHBAG </router-link></b-nav-item>
-        <b-nav-item><router-link to="canvas">CANVAS </router-link></b-nav-item>
+        <b-nav-item><router-link to="/" exact> HOME </router-link></b-nav-item>
+        <b-nav-item><router-link to="punchBag" exact>PUNCHBAG </router-link></b-nav-item>
+        <b-nav-item><router-link to="canvas" exact>CANVAS </router-link></b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->

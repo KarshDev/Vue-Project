@@ -36,7 +36,8 @@ const router = new Router({
         path: "/punchbag",
         component: punchBag
     }
-    ]
+    ],
+    mode: 'history'
     
 })
 

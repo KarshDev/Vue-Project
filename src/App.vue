@@ -17,7 +17,7 @@
 <script>
   import Navbar from './components/navbar.vue';
   import Footer from './components/footer.vue';
-  import VueLessons from './components/lesson.vue';
+  import vueLessons from './components/lesson.vue';
   import addBlog from './components/addBlog.vue';
 
 
@@ -26,7 +26,7 @@
       'navbar': Navbar,
       'app-footer': Footer,
       'add-blog': addBlog,
-      'vuelessons': VueLessons
+      'vuelessons': vueLessons
     }
   }
 </script>
